@@ -1,9 +1,9 @@
-local component = require("component")--
--- local address = "<86cafc04-df76-4805-bc15-250eff91dced>" -- Адресс красного контроллера
+local component = require("component")
+local address = "86cafc04-df76-4805-bc15-250eff91dced" -- Адресс красного контроллера
 local event = require("event")
 local reactor = component.reactor_chamber
-local redstone = component.redstone
--- local redstone = component.proxy(address) -- Обращение к красному контроллеру при помощи уже заданного адреса
+--local redstone = component.redstone
+local redstone = component.proxy(address) -- Обращение к красному контроллеру при помощи уже заданного адреса
 local term = require("term")
 
 local redstoneInput -- Так надо
